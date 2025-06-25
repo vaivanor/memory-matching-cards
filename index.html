@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Memory matching cards</title>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/normalize/8.0.1/normalize.min.css" integrity="sha512-NhSC1YmyruXifcj/KFRWoC561YpHpc5Jtzgvbuzx5VozKpWvQ+4nXhPdFgmx8xqexRcpAglTj9sIBWINXa8x5w==" crossorigin="anonymous" referrerpolicy="no-referrer"/>
+    <link rel="stylesheet" href="./css/style.css">
+</head>
+<body>
+    <header class="head">
+        <h1>Memory Matching Game</h1>
+        <p>Flip and match pairs of cards to test and train your memory.</p>
+    </header>
+
+    <main>
+        <div class="formContainer">
+            <p>Select the number of the cards (from 4 to 18):</p>
+            <form id="form">
+                <input name="name" type="number" min="4" max="18" value="18" step="2"/>
+                <button id="start">Start</button>
+            </form>
+        </div>
+
+        <div class="content">
+            <div class="flexContainerOut">
+                <div class="flexContainerIn">
+                    <div class="flexLeft">
+                        <p>Moves:</p>
+                        <p class="move">0</p>
+                    </div>
+                    <div class="flexRight">
+                        <p>Time:</p>
+                        <p><span class="time">0</span> s</p>
+                    </div>
+                </div>
+                <button id="restart">Restart</button>
+            </div>
+
+            <div class="container"></div>
+        </div>
+
+        
+    </main>
+    
+    <script src="script.js"></script>
+</body>
+</html>
